@@ -10,3 +10,9 @@ func TestSoma(t *testing.T) {
 		t.Errorf("Soma(15, 15) = %d; want 30", result)
 	}
 }
+
+func TestMain(m *testing.M) {
+	main()
+
+	m.Run()
+}
